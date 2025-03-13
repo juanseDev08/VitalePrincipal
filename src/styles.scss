@@ -8,6 +8,8 @@
   --vinotinto-institucional: #800020;
   --vinotinto-insti-oscuro: #660016;
   --vinotinto-insti-claro: #a00030;
+  --morado-oscuro-vitale: #9a5d70;
+  --marron-claro-vitale: #c7b299;
   --rojo: #d12727;
   --fondo-tabla: #ededed;
   --negro-letra: #020024;
@@ -1268,7 +1270,7 @@ width: 100%;
   background-color: white;
   top: 0;
   width: 70%;
-  justify-content: center;
+
 }
 
 .box-section{
@@ -1288,4 +1290,26 @@ body {
     background-size: cover;
     background-position: center;
     color: #2E8B57; /* Verde oscuro */
+}
+
+.custom-text {
+  font-family: 'Merienda', cursive; 
+  font-size: 1.875rem; 
+  font-weight: 500; 
+  text-align: center;
+  color: #333; 
+}
+
+.custom-text .highlight-orange {
+  color: var(--morado-oscuro-vitale); 
+}
+
+.custom-text .highlight-green {
+  color: var(--marron-claro-vitale); 
+}
+
+.gradient-background {
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  padding: 20px; /* Ajusta el padding según sea necesario */
+  border-radius: 10px; /* Opcional: agrega bordes redondeados */
 }
