@@ -1,0 +1,19 @@
+<div class="flex justify-content-center" style="width: 100%; height: 500px;">
+    <p-galleria 
+        [value]="images" 
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'width': '100%', 'max-width': '800px', 'height': '500px' }" 
+        [showThumbnails]="false" 
+        [circular]="true"
+        [autoPlay]="true" 
+        [transitionInterval]="3000"
+        numVisible="1"
+        [showItemNavigators]="true">
+
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.previewImageSrc" 
+                style="width: 100%; height: 80%; display: block; object-fit: contain;">
+        </ng-template>
+
+    </p-galleria>
+</div>

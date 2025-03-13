@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { InicioRoutingModule } from './inicio-routing.module';
+import { InicioComponent } from './inicio.component';
 
-import { ToastModule } from 'primeng/toast';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenubarModule } from 'primeng/menubar';
+
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
 import { PanelMenuModule } from 'primeng/panelmenu';
@@ -17,26 +17,27 @@ import { PasswordModule } from 'primeng/password';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputSwitchModule } from 'primeng/inputswitch';
 
+ 
 import { DropdownModule } from 'primeng/dropdown';
-import { LOCALE_ID } from '@angular/core';
 import '@angular/common/locales/global/es-CO';
-import { ComponentesModule } from './componentes/componentes.module';
-import { RouterOutlet } from '@angular/router';
+import { ToastModule } from 'primeng/toast';
+import { HttpClientModule } from '@angular/common/http';
+
+import { CardModule } from 'primeng/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MenubarModule } from 'primeng/menubar';
+import { ComponentesModule } from '../../componentes/componentes.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    InicioComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    CommonModule,
+    InicioRoutingModule,
     MenubarModule,
     ToastModule,
-    RouterOutlet,
+    HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
     ButtonModule,
     DialogModule,
     PanelMenuModule,
@@ -48,9 +49,8 @@ import { MenubarModule } from 'primeng/menubar';
     InputSwitchModule,
     FormsModule,
     DropdownModule,
+    CardModule,
     ComponentesModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+]
 })
-export class AppModule { }
+export class InicioModule { }
