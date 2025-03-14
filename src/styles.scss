@@ -1310,6 +1310,11 @@ body {
 
 .gradient-background {
   background: linear-gradient(to bottom, #f0f0f0, #ffffff);
-  padding: 20px; /* Ajusta el padding según sea necesario */
-  border-radius: 10px; /* Opcional: agrega bordes redondeados */
+  padding: 20px; 
+  border-radius: 10px;
+}
+
+.icon-como-comprar {
+  font-size: 20px; 
+  color: var(--morado-oscuro-vitale); 
 }

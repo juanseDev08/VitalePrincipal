@@ -5,6 +5,8 @@ import { QueHacemosComponent } from './que-hacemos/que-hacemos.component';
 import { ProductosProveedoresComponent } from './productos-proveedores/productos-proveedores.component';
 import { PedidoComponent } from './pedido/pedido.component';
 import { GalleriaModule } from 'primeng/galleria';
+import { FooterComponent } from './footer/footer.component';
+import { PanelModule } from 'primeng/panel';
 
 
 @NgModule({
@@ -12,18 +14,21 @@ import { GalleriaModule } from 'primeng/galleria';
     GaleriaComponent,
     QueHacemosComponent,
     ProductosProveedoresComponent,
-    PedidoComponent
+    PedidoComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
     GalleriaModule,
+    PanelModule
     
   ],
   exports:[
     GaleriaComponent,
     QueHacemosComponent,
     ProductosProveedoresComponent,
-    PedidoComponent
+    PedidoComponent,
+    FooterComponent
   ]
 })
 export class ComponentesModule { }
