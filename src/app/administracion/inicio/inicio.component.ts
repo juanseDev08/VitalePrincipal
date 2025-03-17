@@ -15,11 +15,11 @@ export class InicioComponent {
   sidebarVisible: boolean = false;
 
   descripcionLinkedIn?: string = "LinkedIn";
-  linkLinkedIn?: string="https://www.linkedin.com/in/juan-sebasti%C3%A1n-san%C3%ADn-villarreal-319584225/";
+  linkLinkedIn?: string = "https://www.linkedin.com/in/juan-sebasti%C3%A1n-san%C3%ADn-villarreal-319584225/";
   iconLinkedIn?: string = "pi pi-linkedin";
 
   descripcionGitHub?: string = "GitHub";
-  linkGitHub?: string="https://github.com/juanseDev08";
+  linkGitHub?: string = "https://github.com/juanseDev08";
   iconGitHub?: string = "pi pi-github";
 
   descripcionCorreo?: string = "juanses081@gmail.com";
@@ -28,8 +28,17 @@ export class InicioComponent {
 
   nomTercero?: string;
   rolAutorizado = false;
-
-  estadoSwitch:number = 1;
+  itemsSD = [
+    {
+      icon: 'pi pi-whatsapp',
+      url: 'https://wa.me/1234567890', // Reemplaza con tu número de WhatsApp
+      tooltipOptions: {
+        tooltipLabel: 'WhatsApp',
+        tooltipPosition: 'left'
+      }
+    }
+  ];
+  estadoSwitch: number = 1;
 
   /**Lista Renuncia formulas de pago */
   listaEstilos = [
@@ -38,13 +47,13 @@ export class InicioComponent {
     { label: 'Azul  Minimalista', value: 3 }
   ];
 
-  estilo: any ;
+  estilo: any;
   placeholderText: string = 'Seleccione';
 
   constructor(
     private router: Router,
     private cdr: ChangeDetectorRef
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.setupMenuItems();
@@ -57,37 +66,37 @@ export class InicioComponent {
 
   setupMenuItems(): void {
 
-      this.items = [
-        {
-          label: 'Inicio',
-          command: () => this.scrollToSection('sobreNosotros')
-        },
-        {
-          label: 'Quienes somos',
-          command: () => this.scrollToSection('sobreNosotros')
-        },
-        {
-          label: 'Productos',
-          command: () => this.scrollToSection('productos')
-        },
-        {
-          label: 'ABD Colombia',
-          command: () => this.scrollToSection('ABDColombia')
-        },
-        {
-          label: 'Fotos',
-          command: () => this.scrollToSection('fotos')
-        },
-        {
-          label: 'Contacto',
-          command: () => this.scrollToSection('Contacto')
-        },
-        {
-          label:'Tienda online',
-          command: () => this.scrollToSection('Contacto')
-        }
-      ];
-    
+    this.items = [
+      {
+        label: 'Inicio',
+        command: () => this.scrollToSection('sobreNosotros')
+      },
+      {
+        label: 'Quienes somos',
+        command: () => this.scrollToSection('sobreNosotros')
+      },
+      {
+        label: 'Productos',
+        command: () => this.scrollToSection('productos')
+      },
+      {
+        label: 'ABD Colombia',
+        command: () => this.scrollToSection('ABDColombia')
+      },
+      {
+        label: 'Fotos',
+        command: () => this.scrollToSection('fotos')
+      },
+      {
+        label: 'Contacto',
+        command: () => this.scrollToSection('Contacto')
+      },
+      {
+        label: 'Tienda online',
+        command: () => this.scrollToSection('Contacto')
+      }
+    ];
+
   }
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
@@ -100,7 +109,7 @@ export class InicioComponent {
   }
 
   cargarEstilos(opcion: number) {
-    
+
     switch (opcion) {
       case 1:
         /**this.estilo = { label: 'OPCION 1', value: 1  };**/
@@ -149,8 +158,12 @@ export class InicioComponent {
         break;
     }
 
-     this.placeholderText = this.estilo.label;
-     this.cdr.detectChanges(); // Forzar la detección de cambios
+    this.placeholderText = this.estilo.label;
+    this.cdr.detectChanges(); // Forzar la detección de cambios
 
   }
+  abrirWhatsApp() {
+    window.open('https://wa.me/573016148500', '_blank');
+  }
+  
 }

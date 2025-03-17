@@ -650,13 +650,12 @@ input {
 
 /* ---------- BUTTON ---------- */
 .p-button {
-  background: #000000;
   border: var(--1-px) solid #ffffff;
   color: #ffffff;
 }
 
 .p-button:enabled:hover {
-  background: black;
+
   border-color: var(--color-gpe);
 }
 
@@ -1317,4 +1316,48 @@ body {
 .icon-como-comprar {
   font-size: 20px; 
   color: var(--morado-oscuro-vitale); 
+}
+
+.p-panel-content{
+  background-color: var(--fondo);
+  color: white;
+}
+.p-panel .p-panel-content{
+  border: none !important;
+}
+
+.whatsapp-button {
+  position: fixed;
+  top:50%;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  transform: translate(-50%, -50%); 
+  background-color: #25d366 !important;
+  background:#25d366 !important ;
+  color: white !important;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button:hover {
+  background-color: #25d366 !important;
+}
+
+.whatsapp-button-backgrond {
+  background-color: #128c7e !important;
+}
+.whatsapp-button-container .p-button {
+  background: #25d366 !important;
+  border-color: #25d366 !important;
+  color: white !important;
+}
+
+.whatsapp-button .pi {
+  font-size: 18px; /* Ajusta el tamaño del ícono */
 }

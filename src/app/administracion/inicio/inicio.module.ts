@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
@@ -26,8 +26,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardModule } from 'primeng/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ComponentesModule } from '../../componentes/componentes.module';
+import { SpeedDialModule } from 'primeng/speeddial';
+
+
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     InicioComponent
   ],
@@ -51,6 +55,7 @@ import { ComponentesModule } from '../../componentes/componentes.module';
     DropdownModule,
     CardModule,
     ComponentesModule,
+    SpeedDialModule
 ]
 })
 export class InicioModule { }

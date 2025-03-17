@@ -24,6 +24,7 @@ import { ComponentesModule } from './componentes/componentes.module';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenubarModule } from 'primeng/menubar';
+import { SpeedDialModule } from 'primeng/speeddial';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { MenubarModule } from 'primeng/menubar';
     FormsModule,
     DropdownModule,
     ComponentesModule,
+    SpeedDialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

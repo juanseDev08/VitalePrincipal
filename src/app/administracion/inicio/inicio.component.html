@@ -1,24 +1,28 @@
 <div class="grid custom-text">
-    <div class="col-offset-2 col-8">
-            
+    <div class="col-offset-2 col-8 pb-0">
+
 
         <div class="flex justify-content-center align-items-start text-50 menu-header ">
             <img src="assets/images/logo.png" alt="Logo" style="height: 100px; margin-right: 10px;">
             <p-menubar [model]="items" class="mt-4"></p-menubar>
         </div>
+
         <div class="col-12 flex justify-content-center" style="width: 100%; height: 800px;">
             <app-galeria></app-galeria>
         </div>
-
-        <div class="col-12 gradient-background" >
+        
+        <div class="col-12 gradient-background">
             <app-que-hacemos></app-que-hacemos>
         </div>
         <div class="col-12">
             <app-pedido></app-pedido>
         </div>
-        <div class="col-12">
+        <div class="col-12 pb-0">
             <app-footer></app-footer>
         </div>
     </div>
-
+</div>
+<div class="whatsapp-button-container">
+    <p-button icon="pi pi-whatsapp" class="whatsapp-button" (click)="abrirWhatsApp()">
+    </p-button>
 </div>
