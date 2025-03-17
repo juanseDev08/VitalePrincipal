@@ -7,6 +7,7 @@ import { PedidoComponent } from './pedido/pedido.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { FooterComponent } from './footer/footer.component';
 import { PanelModule } from 'primeng/panel';
+import { CanalesDistribucionComponent } from './canales-distribucion/canales-distribucion.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PanelModule } from 'primeng/panel';
     QueHacemosComponent,
     ProductosProveedoresComponent,
     PedidoComponent,
-    FooterComponent
+    FooterComponent,
+    CanalesDistribucionComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { PanelModule } from 'primeng/panel';
     QueHacemosComponent,
     ProductosProveedoresComponent,
     PedidoComponent,
-    FooterComponent
+    FooterComponent,
+    CanalesDistribucionComponent
   ]
 })
 export class ComponentesModule { }

@@ -10,6 +10,8 @@
   --vinotinto-insti-claro: #a00030;
   --morado-oscuro-vitale: #9a5d70;
   --marron-claro-vitale: #c7b299;
+  --verde-claro-vitale:#b5c075;
+  --cafe-vitale:#8f7657;
   --rojo: #d12727;
   --fondo-tabla: #ededed;
   --negro-letra: #020024;
@@ -37,7 +39,7 @@
   --max-ancho-dropdown-movil: 300px;
 
   /***Variables para cambiar el color****/
-  --color-gpe: #1e520c;
+  --color-verde-oscuro: #1e520c;
   --color-aux: #276412;
 }
 
@@ -1317,7 +1319,10 @@ body {
   font-size: 20px; 
   color: var(--morado-oscuro-vitale); 
 }
-
+.icon-footer {
+  font-size: 20px; 
+  color: var(--verde-claro-vitale); 
+}
 .p-panel-content{
   background-color: var(--fondo);
   color: white;
@@ -1332,13 +1337,13 @@ body {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  transform: translate(-50%, -50%); 
-  background-color: #25d366 !important;
-  background:#25d366 !important ;
+  transform: translate(-20%, -50%); 
+  background-color: var(--color-verde-oscuro) !important;
+  background:var(--color-verde-oscuro) !important ;
   color: white !important;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1346,18 +1351,46 @@ body {
 }
 
 .whatsapp-button:hover {
-  background-color: #25d366 !important;
+  background-color: var(--color-verde-oscuro) !important;
 }
 
 .whatsapp-button-backgrond {
-  background-color: #128c7e !important;
+  background-color: var(--color-verde-oscuro) !important;
 }
 .whatsapp-button-container .p-button {
-  background: #25d366 !important;
-  border-color: #25d366 !important;
+  background: var(--color-verde-oscuro) !important;
+  border-color: var(--color-verde-oscuro) !important;
   color: white !important;
 }
 
 .whatsapp-button .pi {
-  font-size: 18px; /* Ajusta el tamaño del ícono */
+  font-size: 20px;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-50%) rotate(10deg) scale(1.1);
+}
+
+.whatsapp-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.p-link{
+  color: black !important;
+}
+
+.texto-verde-vitale{
+  color: var(--verde-claro-vitale);
+}
+
+.texto-cafe-vitale{
+  color: var(--cafe-vitale);
+}
+
+.morado-vitale{
+  color: var(--morado-oscuro-vitale);
+}
+
+.p-panel .p-panel-content{
+  padding-bottom: 0px !important;
 }

@@ -22,20 +22,25 @@ export class GaleriaComponent {
       thumbnailImageSrc: 'assets/images/gallery/estaSemana(1).jpeg',
       alt: 'Esta Semana'
     },
+    {
+      previewImageSrc: 'assets/images/gallery/ganaderiaRegenerativa.svg',
+      thumbnailImageSrc: 'assets/images/gallery/ganaderiaRegenerativa.svg',
+      alt: 'Ganadería regenerativa'
+    }
   ];
 
   responsiveOptions: any[] = [
-      {
-          breakpoint: '1024px',
-          numVisible: 1
-      },
-      {
-          breakpoint: '768px',
-          numVisible: 1
-      },
-      {
-          breakpoint: '560px',
-          numVisible: 1
-      }
+    {
+      breakpoint: '1024px',
+      numVisible: 1
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 1
+    },
+    {
+      breakpoint: '560px',
+      numVisible: 1
+    }
   ];
 }

@@ -68,32 +68,39 @@ export class InicioComponent {
 
     this.items = [
       {
-        label: 'Inicio',
-        command: () => this.scrollToSection('sobreNosotros')
+        label: 'Galería',
+        icon: 'pi pi-fw pi-images',
+        command: () => {
+          document.getElementById('galeria')?.scrollIntoView({ behavior: 'smooth' });
+        }
       },
       {
-        label: 'Quienes somos',
-        command: () => this.scrollToSection('sobreNosotros')
+        label: '¿Qué hacemos?',
+        icon: 'pi pi-fw pi-info-circle',
+        command: () => {
+          document.getElementById('que-hacemos')?.scrollIntoView({ behavior: 'smooth' });
+        }
       },
       {
-        label: 'Productos',
-        command: () => this.scrollToSection('productos')
+        label: 'Canales de distribución',
+        icon: 'pi pi-fw pi-warehouse',
+        command: () => {
+          document.getElementById('canales-distribucion')?.scrollIntoView({ behavior: 'smooth' });
+        }
       },
       {
-        label: 'ABD Colombia',
-        command: () => this.scrollToSection('ABDColombia')
-      },
-      {
-        label: 'Fotos',
-        command: () => this.scrollToSection('fotos')
+        label: 'Pedido',
+        icon: 'pi pi-fw pi-shopping-cart',
+        command: () => {
+          document.getElementById('pedido')?.scrollIntoView({ behavior: 'smooth' });
+        }
       },
       {
         label: 'Contacto',
-        command: () => this.scrollToSection('Contacto')
-      },
-      {
-        label: 'Tienda online',
-        command: () => this.scrollToSection('Contacto')
+        icon: 'pi pi-fw pi-phone',
+        command: () => {
+          document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     ];
 

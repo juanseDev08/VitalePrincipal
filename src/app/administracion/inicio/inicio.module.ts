@@ -28,7 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ComponentesModule } from '../../componentes/componentes.module';
 import { SpeedDialModule } from 'primeng/speeddial';
 
-
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -55,7 +55,8 @@ import { SpeedDialModule } from 'primeng/speeddial';
     DropdownModule,
     CardModule,
     ComponentesModule,
-    SpeedDialModule
+    SpeedDialModule,
+    TooltipModule
 ]
 })
 export class InicioModule { }
